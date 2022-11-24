@@ -172,68 +172,6 @@ input {
   margin: 1px 5px;
 }
 
-@media only screen and (max-width: 550px) {
-  .top {
-    height: 4rem;
-    font-size: 1.5rem;
-    align-items: flex-start;
-  }
-  .top-left,
-  .top-right {
-    margin-top: 0.5rem;
-  }
-  .middle {
-    align-items: flex-start;
-    min-height: calc(100vh - (8rem + 4rem));
-  }
-
-  .content {
-    width: 87vw;
-    margin-top: 0;
-  }
-
-  .content h1 {
-    font-size: 3.5rem;
-    margin-top: 0;
-  }
-
-  .content a {
-    display: block;
-  }
-
-  .content p {
-    font-size: 0.9rem;
-  }
-
-  .input {
-    height: 2.7rem;
-    margin-top: 3px;
-  }
-
-  .welcome-note {
-    font-size: 0.8rem;
-  }
-
-  .bottom {
-    height: 8rem;
-  }
-
-  .bottom-left {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .bottom span {
-    display: block;
-  }
-
-  .bottom-right {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-  }
-}
 
 @media (min-width: 726px) and (max-width: 1040px) {
   .top span {
@@ -248,11 +186,10 @@ input {
 
   .content {
     width: 70vw;
-    margin-top: 20vw;
   }
 
   .content h1 {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 
   .input {
@@ -404,3 +341,5 @@ input {
     flex-direction: column;
   }
 }
+
+
