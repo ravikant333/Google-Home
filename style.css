@@ -5,440 +5,402 @@
 }
 
 body {
-    font-family: var(--bodyFont);
-    font-weight: 400;
-    line-height: 1.75;
-    color: var(--textColor);
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    font-family: sans-serif;
-    color: white;
-    background-color: rgb(33, 33, 33);
-  }
-
-  div {
-    margin: 0;
-  }
-
-
-.top{
-    height: 2rem;
-    display: flex;
-    color: aliceblue;
-    flex-direction: row;
-    justify-content: space-between;
-    
+  font-family: var(--bodyFont);
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--textColor);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  color: white;
+  background-color: rgb(33, 33, 33);
 }
 
-.top-left,.top-right{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+div {
+  margin: 0;
 }
 
-.top-left{
+.top {
+  height: 2rem;
+  display: flex;
+  color: aliceblue;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.top-left,
+.top-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-left {
   margin-left: 1rem;
 }
 
-.top-right{
-    margin-right: 1rem;
+.top-right {
+  margin-right: 1rem;
 }
 
-.top-left span, .top-right span{
-    padding-left: 0.5rem;
-    font-size: 0.8rem;
+.top-left span,
+.top-right span {
+  padding-left: 0.5rem;
+  font-size: 0.8rem;
 }
 
-
-.middle{
-    min-height: calc(100vh - (2rem + 2rem));;
-    padding: 0;
-    margin: 0;
-    margin-top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.middle {
+  min-height: calc(100vh - (2rem + 2rem));
+  padding: 0;
+  margin: 0;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.content{
-   margin-bottom: 5rem;
-   text-align: center;
-   width: 38vw;
+.content {
+  margin-bottom: 5rem;
+  text-align: center;
+  width: 38vw;
 }
 
-.content h1{
-    font-weight: bold;
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-   
+.content h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
-.content a{
-    text-decoration: none;
-    color: rgb(32, 32, 244);
-}
-
-.content p{
-    font-size: 0.8rem;
-    letter-spacing: normal;
+.content a {
+  text-decoration: none;
+  color: rgb(32, 32, 244);
 }
 
+.content p {
+  font-size: 0.8rem;
+  letter-spacing: normal;
+}
 
 input:focus {
-    outline: none;
-  }
+  outline: none;
+}
 
-.input{
-    height: 2.3rem;
-    display: flex;
-    flex-direction: row;
-    border: 1px solid white;
-    border-radius: 20px;
-    color: white;
+.input {
+  height: 2.3rem;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid white;
+  border-radius: 20px;
+  color: white;
 }
 
 input {
-    font-size: 1rem;
-    background-color: rgb(33, 33, 33);
-    color: white;
+  font-size: 1rem;
+  background-color: rgb(33, 33, 33);
+  color: white;
 }
 
-.input span,input{
+.input span,
+input {
+  display: block;
+  border: 0;
+}
+
+.input input {
+  width: 85%;
+  padding: 5px 2px;
+}
+
+.input span {
+  padding: 5px;
+  margin-top: 0 auto;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.welcome-note {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.welcome-note span {
+  display: flex;
+  background-color: rgba(51, 50, 50, 0.9);
+  padding: 1px 8px;
+  height: 1.8rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.bottom {
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  border-top: 2px white;
+  background-color: rgb(17, 16, 16);
+}
+
+.bottom-left {
+  margin-left: 1rem;
+  width: 33%;
+  text-align: left;
+}
+
+.bottom-right {
+  margin-right: 1rem;
+  width: 33%;
+  text-align: right;
+}
+.bottom-mid {
+  width: 33%;
+  text-align: center;
+}
+
+.bottom-right span {
+  margin: 1px 5px;
+}
+.bottom-left span {
+  margin: 1px 5px;
+}
+
+@media only screen and (max-width: 550px) {
+  .top {
+    height: 4rem;
+    font-size: 1.5rem;
+    align-items: flex-start;
+  }
+  .top-left,
+  .top-right {
+    margin-top: 0.5rem;
+  }
+  .middle {
+    align-items: flex-start;
+    min-height: calc(100vh - (8rem + 4rem));
+  }
+
+  .content {
+    width: 87vw;
+    margin-top: 0;
+  }
+
+  .content h1 {
+    font-size: 3.5rem;
+    margin-top: 0;
+  }
+
+  .content a {
     display: block;
-    border: 0;
-}
+  }
 
-.input input{
-    width: 85%;
-    padding: 5px 2px;
-}
+  .content p {
+    font-size: 0.9rem;
+  }
 
-.input span{
-    padding: 5px;
-    margin-top: 0 auto;
-    margin-left: 2px;
-    margin-right: 2px;
-   
-}
+  .input {
+    height: 2.7rem;
+    margin-top: 3px;
+  }
 
+  .welcome-note {
+    font-size: 0.8rem;
+  }
 
-.welcome-note{
+  .bottom {
+    height: 8rem;
+  }
+
+  .bottom-left {
+    text-align: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    margin-top: 1rem; 
-}
+    flex-direction: column;
+  }
 
-.welcome-note span{
+  .bottom span {
+    display: block;
+  }
+
+  .bottom-right {
+    text-align: center;
     display: flex;
-    background-color: rgba(51, 50, 50,0.9);
-    padding: 1px 8px ;
-    height: 1.8rem;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;  
+    flex-direction: column;
+  }
 }
 
+@media (min-width: 726px) and (max-width: 1040px) {
+  .top span {
+    display: block;
+    font-size: 1.2rem;
+  }
 
-.bottom{
-    height: 2rem;
+  .middle {
+    align-items: flex-start;
+    min-height: calc(100vh - (8rem + 2rem));
+  }
+
+  .content {
+    width: 70vw;
+    margin-top: 20vw;
+  }
+
+  .content h1 {
+    font-size: 6rem;
+  }
+
+  .input {
+    height: 2.9rem;
+    margin-top: 3px;
+  }
+
+  .welcome-note span {
+    display: block;
+    font-size: 1.2rem;
+  }
+  .middle p {
+    font-size: 1.2rem;
+  }
+
+  .bottom {
+    height: 8rem;
+  }
+
+  .bottom-left {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottom span {
+    display: block;
+    font-size: 1rem;
+    margin-right: 7px;
+  }
+
+  .bottom-right {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.8rem;
-    border-top: 2px white;
-    background-color: rgb(17, 16, 16);
+    width: 25%;
+  }
 }
 
-.bottom-left{
-    margin-left: 1rem;
-    width: 33%;
-    text-align: left;
-}
+@media (min-width: 551px) and (max-width: 725px) {
+  .top span {
+    display: block;
+    font-size: 1.2rem;
+  }
 
-.bottom-right{
-    margin-right: 1rem;
-    width: 33%;
-    text-align: right;
-}
-.bottom-mid{
-    width: 33%;
+  .middle {
+    align-items: flex-start;
+    min-height: calc(100vh - (8rem + 2rem));
+  }
+
+  .content {
+    width: 75vw;
+    margin-top: 10vw;
+  }
+
+  .content h1 {
+    font-size: 4rem;
+  }
+  .input {
+    height: 2.9rem;
+    margin-top: 3px;
+  }
+
+  .welcome-note {
+    font-size: 1rem;
+  }
+
+  .bottom {
+    height: 8rem;
+  }
+
+  .bottom-left {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottom-left,
+  .bottom-right span {
+    display: block;
+    font-size: 1rem;
+  }
+
+  .bottom-right {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
- .bottom-right span{
-    margin: 1px 5px;
+@media only screen and (max-width: 550px) {
+  .top {
+    height: 4rem;
+    font-size: 1.5rem;
+    align-items: flex-start;
+  }
+  .top-left,
+  .top-right {
+    margin-top: 0.5rem;
+  }
+  .middle {
+    align-items: flex-start;
+    min-height: calc(100vh - (8rem + 4rem));
+  }
+
+  .content {
+    width: 87vw;
+    margin-top: 0;
+  }
+
+  .content h1 {
+    font-size: 3.5rem;
+    margin-top: 0;
+  }
+
+  .content a {
+    display: block;
+  }
+
+  .content p {
+    font-size: 0.9rem;
+  }
+
+  .input {
+    height: 2.7rem;
+    margin-top: 3px;
+  }
+
+  .welcome-note {
+    font-size: 0.8rem;
+  }
+
+  .bottom {
+    height: 8rem;
+  }
+
+  .bottom-left {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bottom span {
+    display: block;
+  }
+
+  .bottom-right {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
 }
-.bottom-left span{
-    margin: 1px 5px;
-}
-
-
-@media only screen and (max-width:550px) {
-    .top{
-        height: 4rem;
-        font-size: 1.5rem;
-        align-items: flex-start;
-    }
-.top-left,.top-right{
-      margin-top: 0.5rem;
-}
-    .middle{
-        align-items: flex-start;
-        min-height: calc(100vh - (8rem + 4rem));;
-    }
-    
-     .content{
-       width: 87vw;
-       margin-top: 0;
-    }
-
-   
-    .content h1{
-       
-        font-size: 3.5rem;
-       margin-top: 0;
-       
-    }
-    
-    .content a{
-        display: block;
-    }
-   
-    .content p{
-        font-size: 0.9rem;
-    }
-    
-     
-    .input{
-        height: 2.7rem;
-        margin-top: 3px;
-    }
-    
-    .welcome-note{
-        font-size: 0.8rem;
-    }
-    
-
-    .bottom{
-        height: 8rem;
-    }
-    
-    .bottom-left{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .bottom span{
-        display: block;
-    }
-    
-    .bottom-right{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    }
-
-   
-
-    @media (min-width: 726px) and (max-width: 1040px){
-        .top span{
-            display: block;
-            font-size: 1.2rem;
-          }
-    
-          .middle{
-            align-items: flex-start;
-            min-height: calc(100vh - (8rem + 2rem));;
-        }
-        
-         .content{
-           width: 70vw;
-           margin-top: 20vw;
-        }
-    
-       
-        .content h1{
-            font-size: 6.0rem;
-           
-        }
-
-        .input{
-            height: 2.9rem;
-            margin-top: 3px;
-        }
-        
-        .welcome-note span{
-            display: block;
-            font-size: 1.2rem;
-        }
-        .middle p{
-            font-size: 1.2rem;
-        }
-
-
-        .bottom{
-            height: 8rem;
-        }
-        
-        .bottom-left{
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-    
-        }
-    
-        .bottom span{
-            display: block;
-            font-size: 1rem;
-            margin-right: 7px;
-        }
-        
-        .bottom-right{
-            display: flex;
-            flex-direction: row;
-             width: 25%;
-        }
-        
-
-    }
-
-
-
-    @media (min-width: 551px) and (max-width: 725px) {
-    
-        .top span{
-          display: block;
-          font-size: 1.2rem;
-        }
-  
-        .middle{
-          align-items: flex-start;
-          min-height: calc(100vh - (8rem + 2rem));;
-      }
-      
-       .content{
-         width: 75vw;
-         margin-top: 10vw;
-      }
-  
-     
-      .content h1{
-      
-          font-size: 4.0rem;
-      
-         
-      }
-      .input{
-          height: 2.9rem;
-          margin-top: 3px;
-      }
-      
-      .welcome-note{
-          font-size: 1rem;
-      }
-      
-      .bottom{
-          height: 8rem;
-      }
-      
-      .bottom-left{
-          text-align: center;
-          display: flex;
-          flex-direction: column;
-  
-      }
-  
-      .bottom-left,.bottom-right span{
-          display: block;
-          font-size: 1rem;
-      }
-      
-      .bottom-right{
-          text-align: center;
-          display: flex;
-          flex-direction: column;
-      }
-  
-     
-  
-  
-  
-      }
-
-      @media only screen and (max-width:550px) {
-        .top{
-            height: 4rem;
-            font-size: 1.5rem;
-            align-items: flex-start;
-        }
-    .top-left,.top-right{
-          margin-top: 0.5rem;
-    }
-        .middle{
-            align-items: flex-start;
-            min-height: calc(100vh - (8rem + 4rem));;
-        }
-        
-         .content{
-           width: 87vw;
-           margin-top: 0;
-        }
-    
-       
-        .content h1{
-           
-            font-size: 3.5rem;
-           margin-top: 0;
-           
-        }
-        
-        .content a{
-            display: block;
-        }
-       
-        .content p{
-            font-size: 0.9rem;
-        }
-        
-         
-        .input{
-            height: 2.7rem;
-            margin-top: 3px;
-        }
-        
-        .welcome-note{
-            font-size: 0.8rem;
-        }
-        
-    
-        .bottom{
-            height: 8rem;
-        }
-        
-        .bottom-left{
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-    
-        }
-    
-        .bottom span{
-            display: block;
-        }
-        
-        .bottom-right{
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        }
